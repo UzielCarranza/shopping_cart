@@ -4,26 +4,26 @@ import {Routes, Route} from "react-router-dom";
 import {Home} from "./pages/Home";
 import {Store} from "./pages/Store";
 import {About} from "./pages/About";
+import {Navbar} from "./components/Navbar";
 
 
 function App() {
 
     return (
-        <Container>
+        <>
+            <Navbar/><Container className="mb-4">
             <Routes>
                 <Route path="/"
-                       element={<Home/>}
-                />
+                       element={<Home/>}/>
                 <Route
                     path="/store"
-                    element={<Store/>}
-                />
+                    element={<Store/>}/>
                 <Route
                     path="/about"
-                    element={<About/>}
-                />
+                    element={<About/>}/>
             </Routes>
         </Container>
+        </>
     );
 }
 
