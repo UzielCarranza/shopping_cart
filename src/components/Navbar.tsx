@@ -1,9 +1,9 @@
 import {Container, Nav, Navbar as NavbarBs} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
-export function Navbar() {
+export const Navbar = () => {
     return (
-        <NavbarBs className="bg-black shadow-sm mb-3">
+        <NavbarBs className="bg-blue shadow-sm mb-3">
             <Container>
                 <Nav className="me-auto">
                     <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
